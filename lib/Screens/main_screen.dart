@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:road_trippers/Screens/favourite_page.dart';
-import 'package:road_trippers/Screens/home_page.dart';
-import 'package:road_trippers/Screens/search_page.dart';
-import 'package:road_trippers/Screens/user_detail_page.dart';
+import 'package:road_trippers/Screens/favourite_screen.dart';
+import 'package:road_trippers/Screens/home_screen.dart';
+import 'package:road_trippers/Screens/search_screen.dart';
+import 'package:road_trippers/Screens/user_detail_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
