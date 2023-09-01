@@ -43,6 +43,9 @@ class _FilteredFavoriteItemState extends State<FilteredFavoriteItem> {
               fontSize: 20,
               fontWeight: FontWeight.w700,
             ),
+            maxLines: 1,
+            softWrap: true,
+            overflow: TextOverflow.ellipsis,
           ),
           Row(
             children: [
@@ -73,6 +76,9 @@ class _FilteredFavoriteItemState extends State<FilteredFavoriteItem> {
               fontSize: 12,
               color: Colors.grey,
             ),
+            maxLines: 2,
+            softWrap: true,
+            overflow: TextOverflow.ellipsis,
           ),
           SizedBox(
             height: 24,
