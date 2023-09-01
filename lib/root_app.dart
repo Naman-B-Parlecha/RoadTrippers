@@ -30,11 +30,10 @@ class RootApp extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 50,
-                  backgroundColor:
-                      Colors.black, // Set background color to black
+                  backgroundColor: const Color.fromARGB(
+                      255, 255, 182, 182), // Set background color to black
                   child: Image.network(
-                    "https://i.pinimg.com/564x/6d/1e/bf/6d1ebf50b4a2c395dabbd4f8c1670c4b.jpg",
-                    width: 100,
+                    "https://cdn-icons-png.flaticon.com/512/7154/7154018.png",
                     height: 100,
                     fit: BoxFit.cover,
                   ),
