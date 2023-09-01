@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         vsync:
             this); // for controlling the tab bar length depends on number of tabs
     return Padding(
-      padding: const EdgeInsets.only(top: 70, left: 15, right: 20),
+      padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,8 +67,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.white,
                             image: const DecorationImage(
-                                image:
-                                    AssetImage('assets/images/machi_pichi.jpg'),
+                                image: NetworkImage(
+                                    'https://raw.githubusercontent.com/Naman-Parlecha/RoadTrippers/naman/assets/images/machi_pichi.jpg'),
                                 fit: BoxFit.cover)),
                       );
                     },
@@ -119,8 +119,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             borderRadius: BorderRadius.circular(20),
                             color: Colors.white,
                             image: const DecorationImage(
-                                image:
-                                    AssetImage('assets/images/machi_pichi.jpg'),
+                                image: NetworkImage(
+                                    'https://raw.githubusercontent.com/Naman-Parlecha/RoadTrippers/naman/assets/images/machi_pichi.jpg'),
                                 fit: BoxFit.cover)),
                       ),
                       Text('SkyDiving')

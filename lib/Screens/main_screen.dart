@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:road_trippers/Screens/favourite_screen.dart';
-import 'package:road_trippers/Screens/home_screen.dart';
-import 'package:road_trippers/Screens/search_screen.dart';
-import 'package:road_trippers/Screens/user_detail_screen.dart';
+import 'package:test/screens/favourite_screen.dart';
+import 'package:test/screens/home_screen.dart';
+import 'package:test/screens/search_screen.dart';
+import 'package:test/screens/user_detail_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -31,26 +31,42 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: pages[currentIndexing],
-      bottomNavigationBar: BottomNavigationBar(
-          unselectedFontSize: 0,
-          selectedFontSize: 0,
-          elevation: 0,
-          type: BottomNavigationBarType.fixed,
-          onTap: onTapped,
-          selectedItemColor: Colors.black,
-          unselectedItemColor: Colors.grey.withOpacity(0.75),
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          currentIndex: currentIndexing,
-          items: const [
-            BottomNavigationBarItem(
-                icon: Icon(Icons.home_sharp), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.favorite), label: "Favourite"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person_outline), label: "Profile")
-          ]),
+      bottomNavigationBar: Container(
+        margin: EdgeInsets.only(left: 8, right: 8, bottom: 8),
+        clipBehavior: Clip.hardEdge,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.3),
+              blurRadius: 10,
+              spreadRadius: 5,
+              offset: Offset(0, -3),
+            ),
+          ],
+        ),
+        child: BottomNavigationBar(
+            unselectedFontSize: 0,
+            selectedFontSize: 0,
+            elevation: 0,
+            type: BottomNavigationBarType.fixed,
+            onTap: onTapped,
+            selectedItemColor: Colors.black,
+            unselectedItemColor: Colors.grey.withOpacity(0.75),
+            showSelectedLabels: false,
+            showUnselectedLabels: false,
+            currentIndex: currentIndexing,
+            items: const [
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.home_sharp), label: "Home"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.search), label: "Search"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.favorite), label: "Favourite"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.person_outline), label: "Profile")
+            ]),
+      ),
     );
   }
 }
