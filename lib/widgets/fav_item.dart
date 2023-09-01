@@ -56,7 +56,7 @@ class FavItem extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                     SizedBox(
-                      height: 8,
+                      height: 12,
                     ),
                     Row(
                       children: [
@@ -68,6 +68,7 @@ class FavItem extends StatelessWidget {
                                     color: Theme.of(context)
                                         .colorScheme
                                         .onPrimaryContainer,
+                                    fontSize: 12,
                                   ),
                         ),
                         Spacer(),
@@ -77,6 +78,7 @@ class FavItem extends StatelessWidget {
                               .colorScheme
                               .onPrimaryContainer
                               .withOpacity(0.5),
+                          size: 16,
                         ),
                       ],
                     )
