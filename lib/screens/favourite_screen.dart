@@ -1,7 +1,9 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:test/data/dummy_data.dart';
+
 import 'package:test/models/saved_places.dart';
+
 import 'package:test/screens/filtered_favorites_screen.dart';
 import 'package:test/widgets/fav_item.dart';
 
