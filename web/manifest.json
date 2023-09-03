@@ -1,6 +1,6 @@
 {
-    "name": "road_trippers",
-    "short_name": "road_trippers",
+    "name": "loginpage",
+    "short_name": "loginpage",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

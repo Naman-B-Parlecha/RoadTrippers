@@ -1,3 +1,4 @@
+
 // ignore_for_file: depend_on_referenced_packages, unused_import
 
 import 'package:flutter/material.dart';
@@ -177,12 +178,14 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                   },
                 ),
               ],
+
             ),
           ],
         ),
       ),
     );
   }
+
 
   Widget _buildButtonWithIconAndText(
     BuildContext context,
@@ -212,6 +215,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
           ),
         ),
       ),
+
     );
   }
 }

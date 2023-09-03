@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -10,6 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+
   var image = {
     'Chichen-Itza.jpg': 'Chichen Itza',
     'Colosseum.jpg': 'Colosseum',
@@ -248,6 +250,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 width: double.infinity,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
+
                   itemCount: exploreMoreImages.length,
                   itemBuilder: (context, index) {
                     return Column(
@@ -275,6 +278,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           exploreMoreImages.values.elementAt(index),
                           textAlign: TextAlign.center,
                         )
+
                       ],
                     );
                   },

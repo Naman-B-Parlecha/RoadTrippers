@@ -4,7 +4,9 @@ import 'package:test/screens/favourite_screen.dart';
 import 'package:test/screens/home_screen.dart';
 import 'package:test/screens/search_screen.dart';
 import 'package:test/screens/user_detail_screen.dart';
+
 import 'package:test/widgets/OwnSideDrawer.dart';
+
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -28,6 +30,7 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
+
   void changeIndex(int indexing) {
     setState(() {
       currentIndexing = indexing;
@@ -38,6 +41,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: OwnSideDrawer(changeIndex: changeIndex),
+
       body: pages[currentIndexing],
       bottomNavigationBar: Container(
         margin: EdgeInsets.only(left: 8, right: 8, bottom: 8),
