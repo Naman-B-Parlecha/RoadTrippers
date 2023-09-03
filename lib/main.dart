@@ -23,6 +23,6 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: theme,
-        home: Screens()); //MainScreen-Homepage //Screens-intro page //LoginPage
+        home: Screens());
   }
 }
