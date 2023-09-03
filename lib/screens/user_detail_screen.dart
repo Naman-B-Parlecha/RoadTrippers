@@ -4,7 +4,7 @@ class UserDetailsScreen extends StatelessWidget {
   const UserDetailsScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SafeArea(
       child: ListView(
         padding: const EdgeInsets.all(10),
         children: [
