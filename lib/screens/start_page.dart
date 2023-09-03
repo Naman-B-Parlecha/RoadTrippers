@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:loginpage/login_page.dart';
+import 'package:loginpage/screens/login_page.dart';
 
 class StartPage extends StatelessWidget {
-  final void Function() switchToLogin;
-  const StartPage(this.switchToLogin, {super.key});
+  const StartPage( {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +41,10 @@ class StartPage extends StatelessWidget {
                     Container(
                       // color: Colors.black.withOpacity(0.2),
                       child: ElevatedButton(
-                        onPressed: switchToLogin,
+                        onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => LoginPage(() {})),),
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(5),
