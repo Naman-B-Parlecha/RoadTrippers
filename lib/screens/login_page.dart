@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:loginpage/screens/sign_up_page.dart';
-
-
+import 'package:test/screens/main_screen.dart';
+import 'package:test/screens/sign_up_page.dart';
 
 class LoginPage extends StatelessWidget {
   final void Function() switchToSignUp;
@@ -16,6 +15,7 @@ class LoginPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Container(
           alignment: Alignment.center,
+          height: height * 1.1,
           decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/images/background/download.jpeg'),
@@ -45,64 +45,65 @@ class LoginPage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 20),
                   child: Form(
-                    child: SingleChildScrollView(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          TextFormField(
-                            decoration: const InputDecoration(
-                              prefixIcon: Icon(Icons.person),
-                              prefixIconColor: Colors.blueGrey,
-                              labelText: 'Email',
-                              hintText: 'abc@gmail.com',
-                              labelStyle: TextStyle(
-                                color: Color.fromARGB(255, 96, 125, 139),
-                              ),
-                              border: OutlineInputBorder(),
-                              filled: true,
-                              fillColor: Colors.white,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            prefixIcon: Icon(Icons.person),
+                            prefixIconColor: Colors.blueGrey,
+                            labelText: 'Email',
+                            hintText: 'abc@gmail.com',
+                            labelStyle: TextStyle(
+                              color: Color.fromARGB(255, 96, 125, 139),
+                            ),
+                            border: OutlineInputBorder(),
+                            filled: true,
+                            fillColor: Colors.white,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            prefixIcon: Icon(Icons.fingerprint_sharp),
+                            prefixIconColor: Colors.blueGrey,
+                            labelText: 'Password',
+                            labelStyle: TextStyle(
+                              color: Color.fromARGB(255, 96, 125, 139),
+                            ),
+                            hintText: 'abc@123',
+                            suffixIcon: IconButton(
+                              onPressed: null,
+                              icon: Icon(Icons.remove_red_eye_outlined),
+                            ),
+                            border: OutlineInputBorder(),
+                            filled: true,
+                            fillColor: Colors.white,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Text(
+                              'Forgot Password',
+                              style: GoogleFonts.robotoCondensed(),
                             ),
                           ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          TextFormField(
-                            decoration: const InputDecoration(
-                              prefixIcon: Icon(Icons.fingerprint_sharp),
-                              prefixIconColor: Colors.blueGrey,
-                              labelText: 'Password',
-                              labelStyle: TextStyle(
-                                color: Color.fromARGB(255, 96, 125, 139),
-                              ),
-                              hintText: 'abc@123',
-                              suffixIcon: IconButton(
-                                onPressed: null,
-                                icon: Icon(Icons.remove_red_eye_outlined),
-                              ),
-                              border: OutlineInputBorder(),
-                              filled: true,
-                              fillColor: Colors.white,
-                            ),
-                          ),
-                          TextButton(
-                            onPressed: (){} ,
-                            child: Align(
-                              alignment: Alignment.centerRight,
-                              child: Text(
-                                'Forgot Password',
-                                style: GoogleFonts.robotoCondensed(),
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
+                        )
+                      ],
                     ),
                   ),
                 ),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => MainScreen()),
+                    ),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color.fromARGB(255, 40, 255, 131),
                       padding: const EdgeInsets.symmetric(
@@ -114,32 +115,35 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
+                SizedBox(
+                  height: 10,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    const SizedBox(
-                      width: 105,
+                    IconButton(
+                      onPressed: () {},
+                      icon: Image.asset(
+                        'assets/images/logos/google.png',
+                        height: 60,
+                      ),
                     ),
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/images/logos/google.png'),
-                      iconSize: 60,
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Image.asset('assets/images/logos/facebook.png'),
+                      icon: Image.asset(
+                        'assets/images/logos/facebook.png',
+                        height: 30,
+                      ),
                     )
                   ],
                 ),
                 Align(
                   alignment: Alignment.center,
                   child: TextButton(
-                    onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => SignUpPage()),),
+                    onPressed: () => Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignUpPage()),
+                    ),
                     child: Text(
                       'Sign Up'.toUpperCase(),
                       style: const TextStyle(color: Colors.white),

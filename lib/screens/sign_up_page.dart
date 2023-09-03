@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:loginpage/screens/login_page.dart';
+import 'package:test/screens/login_page.dart';
+import 'package:test/screens/main_screen.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -133,7 +134,10 @@ class _SignUpPageState extends State<SignUpPage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () => Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => MainScreen()),
+                      ),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color.fromARGB(255, 40, 250, 131),
                         padding: const EdgeInsets.symmetric(
@@ -152,15 +156,15 @@ class _SignUpPageState extends State<SignUpPage> {
                   Align(
                     alignment: Alignment.center,
                     child: TextButton(
-                      onPressed: () => Navigator.push(
+                      onPressed: () => Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => LoginPage(() {})),),
+                            builder: (context) => LoginPage(() {})),
+                      ),
                       child: Text(
-                          'Sign In'.toUpperCase(),
-                          style: const TextStyle(color: Colors.white),
-                        ),
-                      
+                        'Sign In'.toUpperCase(),
+                        style: const TextStyle(color: Colors.white),
+                      ),
                     ),
                   )
                 ],

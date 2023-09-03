@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loginpage/screens/login_page.dart';
-import 'package:loginpage/screens/sign_up_page.dart';
-import 'package:loginpage/screens/start_page.dart';
+import 'package:test/screens/start_page.dart';
 
 class Screens extends StatefulWidget {
   const Screens({super.key});
@@ -14,10 +12,8 @@ class Screens extends StatefulWidget {
 class _ScreensState extends State<Screens> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: StartPage(),
-      ),
+    return const Scaffold(
+      body: StartPage(),
     );
   }
 }
