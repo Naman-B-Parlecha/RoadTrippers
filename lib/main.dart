@@ -1,27 +1,28 @@
-// ignore_for_file: unused_import
-
 import 'package:flutter/material.dart';
+
 import 'package:google_fonts/google_fonts.dart';
+import 'package:test/screens/screens.dart';
+
+final theme = ThemeData(
+  useMaterial3: true,
+  colorScheme: ColorScheme.fromSeed(
+    brightness: Brightness.light,
+    seedColor: Color.fromARGB(255, 255, 255, 255),
+  ),
+  textTheme: GoogleFonts.latoTextTheme(),
+);
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Profile Screen',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        textTheme: GoogleFonts.poppinsTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
-      home: const MyApp(),
-    );
+        theme: theme,
+        home: Screens()); //MainScreen-Homepage //Screens-intro page //LoginPage
   }
 }

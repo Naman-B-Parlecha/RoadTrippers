@@ -1,14 +1,20 @@
 // ignore_for_file: depend_on_referenced_packages, unused_import
 
 import 'package:flutter/material.dart';
-import 'package:profile_ui_design/notification_page.dart';
-import 'package:profile_ui_design/screens/edit_profile.dart';
+import 'package:test/screens/login_page.dart';
+import 'notification_page.dart';
+import 'package:test/screens/edit_profile.dart';
 import 'contact_us.dart';
 import 'package:image_picker/image_picker.dart';
 
-class UserDetailsScreen extends StatelessWidget {
+class UserDetailsScreen extends StatefulWidget {
   const UserDetailsScreen({Key? key}) : super(key: key);
 
+  @override
+  State<UserDetailsScreen> createState() => _UserDetailsScreenState();
+}
+
+class _UserDetailsScreenState extends State<UserDetailsScreen> {
   Future<void> _showLogoutConfirmationDialog(BuildContext context) async {
     return showDialog<void>(
       context: context,
@@ -36,6 +42,8 @@ class UserDetailsScreen extends StatelessWidget {
               onPressed: () {
                 // Add your log out logic here
                 Navigator.of(context).pop();
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => LoginPage(() {})));
               },
               child: Text(
                 'Yes',
