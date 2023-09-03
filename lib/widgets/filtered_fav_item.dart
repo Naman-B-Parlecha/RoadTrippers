@@ -81,7 +81,7 @@ class _FilteredFavoriteItemState extends State<FilteredFavoriteItem> {
             overflow: TextOverflow.ellipsis,
           ),
           SizedBox(
-            height: 24,
+            height: 21,
           ),
           Row(
             children: [
