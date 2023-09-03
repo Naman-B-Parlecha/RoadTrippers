@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:test/screens/login_page.dart';
-import 'package:test/screens/main_screen.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});
@@ -51,8 +50,7 @@ class StartPage extends StatelessWidget {
                         onPressed: () => Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) =>
-                                  MainScreen()), //LoginPage(() {})),
+                              builder: (context) => LoginPage(() {})),
                         ),
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:test/screens/login_page.dart';
-import 'package:test/screens/main_screen.dart';
 import 'package:test/screens/screens.dart';
 
 final theme = ThemeData(
@@ -25,6 +23,6 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: theme,
-        home: LoginPage((){})); //MainScreen-Homepage //Screens-intro page
+        home: Screens()); //MainScreen-Homepage //Screens-intro page //LoginPage
   }
 }

@@ -74,6 +74,16 @@ flutter:
     - assets/images/background/download.jpeg
     - assets/images/logos/facebook.png
 
+    - assets/images/Chichen-Itza.jpg
+    - assets/images/Colosseum.jpg
+    - assets/images/TajMahal.jpg
+
+    - assets/ExploreMore/HotAirBalloon.jpg
+    - assets/ExploreMore/MountainClimbing.jpg
+    - assets/ExploreMore/ScubaDiving.jpg
+    - assets/ExploreMore/Skiing.jpg
+
+    - assets/Additional-Images/ProfileImage.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
