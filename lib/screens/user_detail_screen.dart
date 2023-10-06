@@ -1,4 +1,3 @@
-
 // ignore_for_file: depend_on_referenced_packages, unused_import
 
 import 'package:flutter/material.dart';
@@ -68,31 +67,32 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: SafeArea(
         child: ListView(
-          physics: const NeverScrollableScrollPhysics(),
           children: [
             Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Column(
-                  children: [
-                    ClipOval(
-                      child: Image.network(
-                        "https://c4.wallpaperflare.com/wallpaper/350/552/37/anime-anime-boys-monkey-d-luffy-one-piece-red-hd-wallpaper-preview.jpg",
-                        width: 130,
-                        height: 130,
-                        fit: BoxFit.cover,
+                SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      ClipOval(
+                        child: Image.network(
+                          "https://c4.wallpaperflare.com/wallpaper/350/552/37/anime-anime-boys-monkey-d-luffy-one-piece-red-hd-wallpaper-preview.jpg",
+                          width: 130,
+                          height: 130,
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 10),
-                    const Text(
-                      "KNK",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                      const SizedBox(height: 10),
+                      const Text(
+                        "KNK",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    const Text("@Ramu_001")
-                  ],
+                      const Text("@Ramu_001")
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 25),
                 const Text(
@@ -178,14 +178,12 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
                   },
                 ),
               ],
-
             ),
           ],
         ),
       ),
     );
   }
-
 
   Widget _buildButtonWithIconAndText(
     BuildContext context,
@@ -215,7 +213,6 @@ class _UserDetailsScreenState extends State<UserDetailsScreen> {
           ),
         ),
       ),
-
     );
   }
 }

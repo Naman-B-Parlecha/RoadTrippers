@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/models/saved_places.dart';
+import 'package:test/screens/place_details_screen.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
@@ -86,7 +87,12 @@ class _FilteredFavoriteItemState extends State<FilteredFavoriteItem> {
           Row(
             children: [
               ElevatedButton.icon(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (ctx) => PlaceDetailScreen(
+                              place: widget.place,
+                            )));
+                  },
                   icon: Icon(
                     Icons.directions,
                     size: 16,
