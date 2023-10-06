@@ -5,7 +5,6 @@ import 'package:location/location.dart';
 import 'package:material_floating_search_bar_2/material_floating_search_bar_2.dart';
 import 'package:test/widgets/map_widget.dart';
 
-
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
@@ -60,7 +59,6 @@ class _SearchScreenState extends State<SearchScreen> {
               width: double.infinity,
               child: Center(child: Text('Loading...')),
             ),
-
         searchBarUI(),
       ],
     );
@@ -87,7 +85,11 @@ class _SearchScreenState extends State<SearchScreen> {
           child: CircularButton(
             icon: Icon(Icons.place),
             onPressed: () {
-              print('Places Pressed');
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => SearchScreen(),
+                ),
+              );
             },
           ),
         ),
@@ -125,5 +127,4 @@ class _SearchScreenState extends State<SearchScreen> {
       },
     );
   }
-
 }

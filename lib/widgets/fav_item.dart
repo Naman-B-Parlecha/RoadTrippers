@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/models/saved_places.dart';
+import 'package:test/screens/place_details_screen.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class FavItem extends StatelessWidget {
@@ -20,7 +21,12 @@ class FavItem extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       elevation: 5,
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (ctx) => PlaceDetailScreen(
+                    place: place,
+                  )));
+        },
         child: Container(
           width: 150,
           color: Color.fromARGB(220, 255, 255, 255),
