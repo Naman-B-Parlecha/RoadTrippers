@@ -1,4 +1,6 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:test/screens/start_page.dart';
 
 class OwnSideDrawer extends StatelessWidget {
   const OwnSideDrawer({super.key, required this.changeIndex});
@@ -60,7 +62,12 @@ class OwnSideDrawer extends StatelessWidget {
             leading: Icon(Icons.settings),
           ),
           ListTile(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => StartPage(),
+              ));
+              FirebaseAuth.instance.signOut();
+            },
             title: Text('Log Out'),
             leading: Icon(Icons.logout),
           ),
