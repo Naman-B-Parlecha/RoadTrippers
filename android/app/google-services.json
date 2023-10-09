@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "668548871062",
+    "project_id": "roadtrippers-825c4",
+    "storage_bucket": "roadtrippers-825c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668548871062:android:333888e6cc2486b061a3b7",
+        "android_client_info": {
+          "package_name": "com.example.loginpage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDodhHC8rHV-_3INlzDmwGFqY9jetYKebY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

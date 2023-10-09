@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:test/screens/login_page.dart';
 import 'package:test/screens/main_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+final firebase = FirebaseAuth.instance;
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -13,6 +16,31 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
+  final form = GlobalKey<FormState>();
+  var confirmer = '';
+  var enteredname = '';
+  var enteredemail = '';
+  var enteredpassword = '';
+  void submit() async {
+    final isValid = form.currentState!.validate();
+    if (!isValid) {
+      return;
+    }
+    form.currentState!.save();
+    try {
+      final usercred = await firebase.createUserWithEmailAndPassword(
+          email: enteredemail, password: enteredpassword);
+      print(usercred);
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => MainScreen(),
+      ));
+    } on FirebaseAuthException catch (error) {
+      ScaffoldMessenger.of(context).clearSnackBars();
+      ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(error.message ?? "Authentication Failed")));
+    }
+  }
+
   @override
   Widget build(context) {
     final height = MediaQuery.of(context).size.height;
@@ -49,6 +77,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   Container(
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     child: Form(
+                      key: form,
                       child: Column(
                         children: [
                           TextFormField(
@@ -64,6 +93,15 @@ class _SignUpPageState extends State<SignUpPage> {
                               filled: true,
                               fillColor: Colors.white,
                             ),
+                            validator: (value) {
+                              if (value == null || value.trim().isEmpty) {
+                                return 'enter a valid name';
+                              }
+                              return null;
+                            },
+                            onSaved: (newValue) {
+                              enteredname = newValue!;
+                            },
                           ),
                           const SizedBox(
                             height: 10,
@@ -81,6 +119,17 @@ class _SignUpPageState extends State<SignUpPage> {
                               filled: true,
                               fillColor: Colors.white,
                             ),
+                            validator: (value) {
+                              if (value == null ||
+                                  value.trim().isEmpty ||
+                                  !value.contains('@gmail.com')) {
+                                return 'enter a valid email address';
+                              }
+                              return null;
+                            },
+                            onSaved: (newValue) {
+                              enteredemail = newValue!;
+                            },
                           ),
                           const SizedBox(
                             height: 10,
@@ -102,6 +151,13 @@ class _SignUpPageState extends State<SignUpPage> {
                               filled: true,
                               fillColor: Colors.white,
                             ),
+                            validator: (value) {
+                              if (value == null || value.trim().length < 6) {
+                                return 'enter a stronger password';
+                              }
+                              confirmer = value;
+                              return null;
+                            },
                           ),
                           const SizedBox(
                             height: 10,
@@ -123,6 +179,15 @@ class _SignUpPageState extends State<SignUpPage> {
                               filled: true,
                               fillColor: Colors.white,
                             ),
+                            validator: (value) {
+                              if (value != confirmer) {
+                                return 're.check ur entered password';
+                              }
+                              return null;
+                            },
+                            onSaved: (newValue) {
+                              enteredpassword = newValue!;
+                            },
                           ),
                         ],
                       ),
@@ -134,10 +199,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () => Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(builder: (context) => MainScreen()),
-                      ),
+                      onPressed: submit,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Color.fromARGB(255, 40, 250, 131),
                         padding: const EdgeInsets.symmetric(
