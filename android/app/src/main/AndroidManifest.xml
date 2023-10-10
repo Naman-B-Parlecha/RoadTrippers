@@ -3,6 +3,8 @@
         android:label="loginpage"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.andriod.geo.API_KEY"
+            android:value="AIzaSyAWQzuZp5TP1l0QHz85ig4A4LzikMEVmhI"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -11,6 +13,7 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
+
             <!-- Specifies an Android theme to apply to this Activity as soon as
                  the Android process has started. This theme is visible to the user
                  while the Flutter UI initializes. After that, this theme continues

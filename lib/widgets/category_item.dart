@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:test/models/saved_places.dart';
 import 'package:test/models/store_places.dart';
 import 'package:test/screens/place_details_screen.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:share_plus/share_plus.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:share_plus/share_plus.dart';
 
-class FilteredFavoriteItem extends StatefulWidget {
-  FilteredFavoriteItem(this.place, {super.key});
-  final SavedPlaces place;
+class CategoryItem extends StatefulWidget {
+  CategoryItem(this.place, {super.key});
+  final StorePlaces place;
   @override
-  State<FilteredFavoriteItem> createState() {
+  State<CategoryItem> createState() {
     // TODO: implement createState
-    return _FilteredFavoriteItemState();
+    return _CategoryItemState();
   }
 }
 
-class _FilteredFavoriteItemState extends State<FilteredFavoriteItem> {
+class _CategoryItemState extends State<CategoryItem> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -92,12 +91,7 @@ class _FilteredFavoriteItemState extends State<FilteredFavoriteItem> {
                   onPressed: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (ctx) => PlaceDetailScreen(
-                              place: StorePlaces(
-                                  widget.place.name,
-                                  widget.place.latlng,
-                                  widget.place.img,
-                                  widget.place.address,
-                                  widget.place.category.name),
+                              place: widget.place,
                             )));
                   },
                   icon: Icon(

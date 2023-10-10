@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/models/saved_places.dart';
+import 'package:test/models/store_places.dart';
 import 'package:test/screens/place_details_screen.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -24,7 +25,8 @@ class FavItem extends StatelessWidget {
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
               builder: (ctx) => PlaceDetailScreen(
-                    place: place,
+                    place: StorePlaces(place.name, place.latlng, place.img,
+                        place.address, place.category.name),
                   )));
         },
         child: Container(
