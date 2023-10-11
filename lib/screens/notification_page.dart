@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'shared_preferences_manager.dart';
 
 class NotificationPage extends StatefulWidget {
   const NotificationPage({Key? key}) : super(key: key);
@@ -8,12 +9,22 @@ class NotificationPage extends StatefulWidget {
 }
 
 class _NotificationPageState extends State<NotificationPage> {
-  bool isNotificationOn = true;
-  bool isSilentNotification = false;
-  bool isEmailNotificationOn = false; // Add this line for email notification
+  final SharedPreferencesManager sharedPreferencesManager =
+      SharedPreferencesManager();
+
+  @override
+  void initState() {
+    super.initState();
+    // Initialize SharedPreferencesManager
+    sharedPreferencesManager.initialize();
+  }
 
   @override
   Widget build(BuildContext context) {
+    bool isNotificationOn = sharedPreferencesManager.isNotificationOn;
+    bool isSilentNotification = sharedPreferencesManager.isSilentNotification;
+    bool isEmailNotificationOn = sharedPreferencesManager.isEmailNotificationOn;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Notifications"),
@@ -28,6 +39,7 @@ class _NotificationPageState extends State<NotificationPage> {
               setState(() {
                 isNotificationOn = value;
               });
+              sharedPreferencesManager.isNotificationOn = isNotificationOn;
             },
           ),
           // Switch for silent notification
@@ -38,6 +50,8 @@ class _NotificationPageState extends State<NotificationPage> {
               setState(() {
                 isSilentNotification = value;
               });
+              sharedPreferencesManager.isSilentNotification =
+                  isSilentNotification;
             },
           ),
           // Switch for email notification
@@ -49,6 +63,8 @@ class _NotificationPageState extends State<NotificationPage> {
                 setState(() {
                   isEmailNotificationOn = value;
                 });
+                sharedPreferencesManager.isEmailNotificationOn =
+                    isEmailNotificationOn;
               },
             ),
           ),

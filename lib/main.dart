@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_config/flutter_config.dart';
@@ -16,7 +18,7 @@ final theme = ThemeData(
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
     brightness: Brightness.light,
-    seedColor: Color.fromARGB(255, 255, 255, 255),
+    seedColor: const Color.fromARGB(255, 255, 255, 255),
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );
@@ -42,14 +44,14 @@ class App extends StatelessWidget {
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
               print('hi im at splash');
-              return SplashScreen();
+              return const SplashScreen();
             }
             if (snapshot.hasData) {
               print('im at mainscreen');
-              return MainScreen();
+              return const MainScreen();
             }
             print('im at startpage');
-            return StartPage();
+            return const StartPage();
           },
         ));
   }
