@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDodhHC8rHV-_3INlzDmwGFqY9jetYKebY',
-    appId: '1:668548871062:android:333888e6cc2486b061a3b7',
-    messagingSenderId: '668548871062',
-    projectId: 'roadtrippers-825c4',
-    storageBucket: 'roadtrippers-825c4.appspot.com',
+    apiKey: 'AIzaSyD6dlz18YWQFNDcnZsBceox32dL2abGfAs',
+    appId: '1:368695710270:android:8c058a2a3fc5603eb1b76f',
+    messagingSenderId: '368695710270',
+    projectId: 'travel-app-39a1c',
+    storageBucket: 'travel-app-39a1c.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCYTO2SHtEk_5KHY1nBiPdMYEpRkmCLSqU',
-    appId: '1:668548871062:ios:117be7d19730d77861a3b7',
-    messagingSenderId: '668548871062',
-    projectId: 'roadtrippers-825c4',
-    storageBucket: 'roadtrippers-825c4.appspot.com',
+    apiKey: 'AIzaSyBqXb6_6-6RmWOkImFENo2goUoQQwLLYD0',
+    appId: '1:368695710270:ios:ca263230aa227b39b1b76f',
+    messagingSenderId: '368695710270',
+    projectId: 'travel-app-39a1c',
+    storageBucket: 'travel-app-39a1c.appspot.com',
     iosBundleId: 'com.example.loginpage',
   );
 }
