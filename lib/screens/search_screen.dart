@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:latlong2/latlong.dart';
+
 import 'package:location/location.dart';
 import 'package:material_floating_search_bar_2/material_floating_search_bar_2.dart';
 import 'package:test/widgets/map_widget.dart';
@@ -53,12 +53,11 @@ class _SearchScreenState extends State<SearchScreen> {
     return Stack(
       fit: StackFit.expand,
       children: [
-        mapContent ??
-            Container(
-              height: double.infinity,
-              width: double.infinity,
-              child: Center(child: Text('Loading...')),
-            ),
+        Container(
+          height: double.infinity,
+          width: double.infinity,
+          child: mapContent,
+        ),
         searchBarUI(),
       ],
     );
@@ -84,13 +83,7 @@ class _SearchScreenState extends State<SearchScreen> {
           showIfOpened: false,
           child: CircularButton(
             icon: Icon(Icons.place),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => SearchScreen(),
-                ),
-              );
-            },
+            onPressed: () {},
           ),
         ),
         FloatingSearchBarAction.searchToClear(

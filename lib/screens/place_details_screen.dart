@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:test/models/saved_places.dart';
+import 'package:test/models/store_places.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
   const PlaceDetailScreen({
     super.key,
     required this.place,
   });
-  final SavedPlaces place;
+  final StorePlaces place;
   @override
   State<PlaceDetailScreen> createState() => _PlaceDetailScreenState();
 }
