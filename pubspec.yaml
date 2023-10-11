@@ -40,7 +40,6 @@ dependencies:
   transparent_image: ^2.0.1
   flutter_rating_bar: ^4.0.1
   material_floating_search_bar_2: ^0.5.0
-  flutter_map: ^5.0.0
   url_launcher: ^6.1.14
   location: ^5.0.3
   image_picker: ^1.0.4
@@ -88,6 +87,12 @@ flutter:
     - assets/ExploreMore/MountainClimbing.jpg
     - assets/ExploreMore/ScubaDiving.jpg
     - assets/ExploreMore/Skiing.jpg
+
+    - assets/ExploreMore/artgallery.jpg
+    - assets/ExploreMore/cafe.jpg
+    - assets/ExploreMore/citymall.jpg
+    - assets/ExploreMore/museum.jpg
+    - assets/ExploreMore/stadium.jpg
 
     - assets/Additional-Images/ProfileImage.jpg
 

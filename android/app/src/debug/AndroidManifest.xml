@@ -3,5 +3,9 @@
          the Flutter tool needs it to communicate with the running application
          to allow setting breakpoints, to provide hot reload, etc.
     -->
+     <application>
+        <meta-data android:name="com.google.andriod.geo.API_KEY"
+            android:value="AIzaSyAWQzuZp5TP1l0QHz85ig4A4LzikMEVmhI"/>
+    </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

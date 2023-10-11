@@ -19,8 +19,8 @@ class _MapWidgetState extends State<MapWidget> {
   Widget build(BuildContext context) {
     return FlutterMap(
       options: MapOptions(
-        center: widget.currLoc,
-        zoom: 15,
+        initialCenter: widget.currLoc,
+        initialZoom: 15,
         onTap: (psn, loc) {},
       ),
       children: [
