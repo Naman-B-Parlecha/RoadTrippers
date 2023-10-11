@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:test/models/store_places.dart';
+import 'package:test/providers/favorite_provider.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
   const PlaceDetailScreen({
@@ -19,6 +21,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
   Widget build(BuildContext context) {
     final Name = widget.place.name;
     final ImagePlace = widget.place.img;
+    final provider = Provider.of<FavoriteProvider>(context);
     return Scaffold(
       body: Stack(
         children: [
@@ -160,7 +163,7 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                     children: [
                       InkWell(
                         onTap: () {
-                          // need to add code which will add this place to favourite screen //
+                          provider.toggleFavorites(widget.place);
                         },
                         child: Container(
                           height: 70,
@@ -170,7 +173,10 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15))),
                           child: Center(
-                            child: Icon(
+                            child: provider.isPresent(widget.place)? Icon(
+                              Icons.favorite,
+                              color: Theme.of(context).colorScheme.background,
+                            ):Icon(
                               Icons.favorite_border,
                               color: Theme.of(context).colorScheme.background,
                             ),
