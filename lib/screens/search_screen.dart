@@ -76,7 +76,7 @@ class _SearchScreenState extends State<SearchScreen> {
       "maps/api/place/autocomplete/json",
       {
         "input": value,
-        "key": "AIzaSyAWQzuZp5TP1l0QHz85ig4A4LzikMEVmhI",
+        "key": "xyz",
       },
     );
     String? response = await NetworkUtility.fetchUrl(uri);

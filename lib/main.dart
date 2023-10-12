@@ -43,14 +43,11 @@ class App extends StatelessWidget {
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
-              print('hi im at splash');
               return const SplashScreen();
             }
             if (snapshot.hasData) {
-              print('im at mainscreen');
               return const MainScreen();
             }
-            print('im at startpage');
             return const StartPage();
           },
         ));
