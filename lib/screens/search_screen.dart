@@ -7,6 +7,7 @@ import 'package:location/location.dart';
 import 'package:material_floating_search_bar_2/material_floating_search_bar_2.dart';
 import 'package:test/models/autocomplate_prediction.dart';
 import 'package:test/models/place_auto_complate_response.dart';
+import 'package:test/screens/map_details_screen.dart';
 import 'package:test/widgets/map_widget.dart';
 import 'package:test/widgets/network_utility.dart';
 
@@ -75,7 +76,7 @@ class _SearchScreenState extends State<SearchScreen> {
       "maps/api/place/autocomplete/json",
       {
         "input": value,
-        "key": "syz",
+        "key": "AIzaSyAWQzuZp5TP1l0QHz85ig4A4LzikMEVmhI",
       },
     );
     String? response = await NetworkUtility.fetchUrl(uri);
@@ -131,12 +132,29 @@ class _SearchScreenState extends State<SearchScreen> {
                   itemBuilder: (context, index) {
                     return ListTile(
                       title: Text(
-                        placePredictions[index].description!,
+                        placePredictions[index].structuredFormatting!.mainText!,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),
+                      subtitle: Text(
+                        placePredictions[index]
+                            .structuredFormatting!
+                            .secondaryText!,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                       onTap: () {
-                        print("\nTapped\n");
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => MapDetailScreen(
+                                  placeName: placePredictions[index]
+                                      .structuredFormatting!
+                                      .mainText!,
+                                  placeAddress: placePredictions[index]
+                                      .structuredFormatting!
+                                      .secondaryText!,
+                                  placeReference:
+                                      placePredictions[index].placeId!,
+                                ))));
                       },
                     );
                   }),
