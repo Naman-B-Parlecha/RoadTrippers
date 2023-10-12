@@ -40,22 +40,19 @@ class App extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => FavoriteProvider(),
       child: MaterialApp(
-          theme: theme,
-          home: StreamBuilder(
-            stream: FirebaseAuth.instance.authStateChanges(),
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                print('hi im at splash');
-                return SplashScreen();
-              }
-              if (snapshot.hasData) {
-                print('im at mainscreen');
-                return MainScreen();
-              }
-              print('im at startpage');
-              return StartPage();
-            },
-          )),
+        theme: theme,
+        home: StreamBuilder(
+          stream: FirebaseAuth.instance.authStateChanges(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const SplashScreen();
+            }
+            if (snapshot.hasData) {
+              return const MainScreen();
+            }
+            return const StartPage();
+          },
+        ))
     );
   }
 }
