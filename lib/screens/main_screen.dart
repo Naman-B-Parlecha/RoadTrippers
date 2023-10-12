@@ -7,7 +7,6 @@ import 'package:test/screens/user_detail_screen.dart';
 
 import 'package:test/widgets/OwnSideDrawer.dart';
 
-
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
   @override
@@ -30,7 +29,6 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
-
   void changeIndex(int indexing) {
     setState(() {
       currentIndexing = indexing;
@@ -41,19 +39,18 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: OwnSideDrawer(changeIndex: changeIndex),
-
       body: pages[currentIndexing],
       bottomNavigationBar: Container(
-        margin: EdgeInsets.only(left: 8, right: 8, bottom: 8),
+        margin: const EdgeInsets.only(left: 8, right: 8, bottom: 8),
         clipBehavior: Clip.hardEdge,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+          borderRadius: const BorderRadius.all(Radius.circular(10)),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.3),
               blurRadius: 10,
               spreadRadius: 5,
-              offset: Offset(0, -3),
+              offset: const Offset(0, -3),
             ),
           ],
         ),

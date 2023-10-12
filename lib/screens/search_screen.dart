@@ -1,9 +1,15 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:latlong2/latlong.dart';
 
 import 'package:location/location.dart';
 import 'package:material_floating_search_bar_2/material_floating_search_bar_2.dart';
+import 'package:test/models/autocomplate_prediction.dart';
+import 'package:test/models/place_auto_complate_response.dart';
+import 'package:test/screens/map_details_screen.dart';
 import 'package:test/widgets/map_widget.dart';
+import 'package:test/widgets/network_utility.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -63,6 +69,28 @@ class _SearchScreenState extends State<SearchScreen> {
     );
   }
 
+  List<AutocompletePrediction> placePredictions = [];
+  void _onSearchChanged(String value) async {
+    Uri uri = Uri.https(
+      "maps.googleapis.com",
+      "maps/api/place/autocomplete/json",
+      {
+        "input": value,
+        "key": "xyz",
+      },
+    );
+    String? response = await NetworkUtility.fetchUrl(uri);
+    if (response != null) {
+      PlaceAutocompleteResponse result =
+          PlaceAutocompleteResponse.parseAutocompleteResult(response);
+      if (result.predictions != null) {
+        setState(() {
+          placePredictions = result.predictions!;
+        });
+      }
+    }
+  }
+
   Widget searchBarUI() {
     return FloatingSearchBar(
       hint: 'Search.....',
@@ -72,7 +100,7 @@ class _SearchScreenState extends State<SearchScreen> {
       elevation: 4.0,
       physics: BouncingScrollPhysics(),
       onQueryChanged: (query) {
-        // Your methods will be here
+        _onSearchChanged(query);
       },
       transitionCurve: Curves.easeInOut,
       transitionDuration: Duration(milliseconds: 500),
@@ -96,24 +124,40 @@ class _SearchScreenState extends State<SearchScreen> {
           child: Material(
             color: Colors.white,
             child: Container(
+              alignment: AlignmentDirectional.topCenter,
               height: 220.0,
               color: Colors.white,
-              child: Column(
-                children: [
-                  ListTile(
-                    title: Text('Home'),
-                    subtitle: Text('Moodalpalya circle'),
-                  ),
-                  ListTile(
-                    title: Text('Dayananda Sagar College'),
-                    subtitle: Text('Kumarswamy layout'),
-                  ),
-                  ListTile(
-                    title: Text('Dayananda Sagar College'),
-                    subtitle: Text('Kumarswamy layout'),
-                  ),
-                ],
-              ),
+              child: ListView.builder(
+                  itemCount: min(3, placePredictions.length),
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Text(
+                        placePredictions[index].structuredFormatting!.mainText!,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      subtitle: Text(
+                        placePredictions[index]
+                            .structuredFormatting!
+                            .secondaryText!,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => MapDetailScreen(
+                                  placeName: placePredictions[index]
+                                      .structuredFormatting!
+                                      .mainText!,
+                                  placeAddress: placePredictions[index]
+                                      .structuredFormatting!
+                                      .secondaryText!,
+                                  placeReference:
+                                      placePredictions[index].placeId!,
+                                ))));
+                      },
+                    );
+                  }),
             ),
           ),
         );
