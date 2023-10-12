@@ -1,9 +1,13 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:test/data/dummy_data.dart';
+import 'package:test/models/store_places.dart';
+import 'package:test/providers/favorite_provider.dart';
 
 import 'package:test/screens/filtered_favorites_screen.dart';
 import 'package:test/widgets/fav_item.dart';
+import 'package:test/widgets/fav_place.dart';
 
 class FavouriteScreen extends StatefulWidget {
   const FavouriteScreen({super.key});
@@ -17,6 +21,8 @@ class FavouriteScreen extends StatefulWidget {
 class _FavouriteScreenState extends State<FavouriteScreen> {
   @override
   Widget build(BuildContext context) {
+    final provider = Provider.of<FavoriteProvider>(context);
+    final places = provider.favPlaces;
     // TODO: implement build
     return SafeArea(
       child: Padding(
@@ -28,16 +34,17 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
               Padding(
                 padding: const EdgeInsets.only(left: 8.0, top: 12),
                 child: Text(
-                  'Recently saved',
+                  'Favorites',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.w800),
                 ),
               ),
               Container(
                 height: 200,
-                child: ListView.builder(
+                child:  
+                ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: min(favItems.length, 5),
-                  itemBuilder: (context, index) => FavItem(favItems[index]),
+                  itemCount: min(places.length, 5),
+                  itemBuilder: (context, index) => FavPlace(provider.favPlaces[index]),
                 ),
               ),
               SizedBox(height: 16),

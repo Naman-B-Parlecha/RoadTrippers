@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "668548871062",
-    "project_id": "roadtrippers-825c4",
-    "storage_bucket": "roadtrippers-825c4.appspot.com"
+    "project_number": "368695710270",
+    "project_id": "travel-app-39a1c",
+    "storage_bucket": "travel-app-39a1c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:668548871062:android:333888e6cc2486b061a3b7",
+        "mobilesdk_app_id": "1:368695710270:android:8c058a2a3fc5603eb1b76f",
         "android_client_info": {
           "package_name": "com.example.loginpage"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDodhHC8rHV-_3INlzDmwGFqY9jetYKebY"
+          "current_key": "AIzaSyD6dlz18YWQFNDcnZsBceox32dL2abGfAs"
         }
       ],
       "services": {

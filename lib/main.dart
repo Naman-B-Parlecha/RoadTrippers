@@ -1,14 +1,14 @@
-// ignore_for_file: avoid_print
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_config/flutter_config.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:test/Screens/SplashScreen.dart';
 import 'package:test/Screens/home_screen.dart';
 import 'package:test/Screens/main_screen.dart';
 import 'package:test/Screens/start_page.dart';
+import 'package:test/providers/favorite_provider.dart';
 import 'package:test/screens/screens.dart';
 
 import 'package:firebase_core/firebase_core.dart';
@@ -18,7 +18,7 @@ final theme = ThemeData(
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
     brightness: Brightness.light,
-    seedColor: const Color.fromARGB(255, 255, 255, 255),
+    seedColor: Color.fromARGB(255, 255, 255, 255),
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );
@@ -37,7 +37,9 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return ChangeNotifierProvider(
+      create: (context) => FavoriteProvider(),
+      child: MaterialApp(
         theme: theme,
         home: StreamBuilder(
           stream: FirebaseAuth.instance.authStateChanges(),
@@ -50,6 +52,7 @@ class App extends StatelessWidget {
             }
             return const StartPage();
           },
-        ));
+        ))
+    );
   }
 }
