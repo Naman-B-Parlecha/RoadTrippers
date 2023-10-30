@@ -632,6 +632,7 @@ List<StorePlaces> park_places = [
     '1342, 60 Feet Rd, AECS Layout - D Block, AECS Layout, Marathahalli, Bengaluru, Karnataka 560037',
     'park',
   ),
+
   //my places added from here
   //zone - 4
   StorePlaces(
@@ -778,6 +779,7 @@ List<StorePlaces> monument_places = [
     'No 40, Near Infant Jesus Church Bazaar Street Vivek Nagar, Neelasandra, Bengaluru, Karnataka 560047',
     'monument',
   ),
+<
   //zone - 4
   StorePlaces(
       'Kurubarahalli',
@@ -946,6 +948,7 @@ List<StorePlaces> restaurant_places = [
     'K.R.Puram, Bangalore South Ground Floor, Survey No.95, Bengaluru, Karnataka 560037',
     'cafe',
   ),
+
   //zone - 4
   StorePlaces(
       'Le Arabia',
@@ -1049,6 +1052,7 @@ List<StorePlaces> hotel_places = [
     '143/1, Kadubeesanahalli, Opposite Prestige Tech Park, Marthahalli Outer Ring Road, Varthur (H), Bengaluru, Karnataka 560087',
     'hotel',
   ),
+
   //zone - 4
   StorePlaces(
       'Hotel Golden Arch',
