@@ -570,6 +570,54 @@ List<StorePlaces> places = [
       'https://lh5.googleusercontent.com/p/AF1QipMauXGqfoLe-OZ5xJZ0HpxTt73x-B2DhkgMI4Zv=w408-h290-k-no',
       '2275, Tumkur Rd, Yeshwanthpur Industrial Area, Phase 1, Yeswanthpur, Bengaluru, Karnataka 560022',
       'hotel'),
+    //zone - 11
+  StorePlaces('Ullala BDA Park',LatLng(12.9860109,77.4499397),'https://lh5.googleusercontent.com/p/AF1QipPivQrwUobDpvQdb1rpO9OUeo99QmbBW9X4qhrS=w408-h306-k-no','5th Block, Upkar Residency Layout, Railway Layout, SMV Layout, Ullal, Karnataka 560110','park'),
+  StorePlaces('BBMP PARK', LatLng(13.0158435,77.4676337),'https://lh5.googleusercontent.com/p/AF1QipN47WvMahNGJJ65KpTH5tnLjVgkdCUSRCOUOeOE=w426-h240-k-no','3rd Block, HMT Layout, Post, Nagasandra, Bengaluru, Karnataka 560073','park'),
+  StorePlaces('Andrahalli Park',LatLng(13.0130469,77.474042),'https://lh5.googleusercontent.com/p/AF1QipOuVewAZ0WYBHmvBevci0qcj3a4X31cXCUoN0SX=w408-h305-k-no','2F5P+XJC, Ragavendra Nagar, Bengaluru, Karnataka 560091','park'),
+  StorePlaces('Jnanaganapthi temple Park',LatLng(12.9347896,77.4619678),'https://lh5.googleusercontent.com/p/AF1QipMzXzuLmf_b9AAW1Y-FLSgG7xiNsu7puFsv_KQc=w426-h240-k-no','14th, Jnanabharathi Bengaluru, 17th A Cross Rd, Gnanabharathi Layout 2nd Block, Jnana Ganga Nagar, Bengaluru, Karnataka 560056','park'),
+  StorePlaces('Kempegowda Park',LatLng(12.9877721,77.4265432),'https://lh5.googleusercontent.com/p/AF1QipMniTIYARy1MUwM2riPdcRTrdyykbxeQ6K8ID59=w408-h408-k-no','XFRF+F7R, Kempegowdanagar, Byadarahalli, Bengaluru, Karnataka 560091','park'),
+  //zone - 11
+  StorePlaces('Sallapuradamma Temple',LatLng(12.9861034,77.4492343),'https://lh5.googleusercontent.com/p/AF1QipMblBY8MQqgPycLWiK8EUocn8H1llFYnZ8cTaKd=w408-h544-k-no','961A, 17th Cross Rd D Group Employees Society, 17th Cross Rd, D Group Employees Society, D-Group Layout, Srigandada Kaval, Annapurneshwari Nagar, Bengaluru, Karnataka 560091','monument'),
+  StorePlaces('Veeranjaneya Devaru Temple',LatLng(12.9861034,77.4492343),'https://lh5.googleusercontent.com/p/AF1QipPq2G-4xjFon-EnPGgZrUa4cPLCOkzfmOlVX9Ue=w408-h306-k-no','Hegganahalli Main Rd, Sanjeevani Nagar, Sunkadakatte, Bengaluru, Karnataka 560091','monument'),
+  StorePlaces('ISKCON - Rajapur Jagannatha Dham',LatLng(12.9721584,77.4386852),'https://lh5.googleusercontent.com/p/AF1QipOc5FtVh0mXhC_jQnJ4ItiroFyqZFwO5rRRArhX=w522-h240-k-no','ISKCON Magadi Main Road 2nd Floor, #39 Priyadarshini Layout, next to BEL 2nd Stage, off Magadi Main Road, Bengaluru, Karnataka 560091','monument'),
+  StorePlaces('The Destino',LatLng(13.0112796,77.4358032),'https://lh5.googleusercontent.com/p/AF1QipM-8EUv5A8RxuYThQthCJPnCz4Sc8i6WiAVT0FW=w408-h272-k-no','62, K G Lakkenhalli, Lakshmipura post, Dasanpura, hobli, Bengaluru, Karnataka 562162','monument'),
+  //zone - 11
+  StorePlaces('The Village Restaurant',LatLng(13.0045051,77.4270485),'https://lh5.googleusercontent.com/p/AF1QipNZHVvNhO8fk5AlPAw7EGDYj0NjAKxsLRbWqgFZ=w408-h271-k-no','Janapriya Rd, Kadabagere Cross, Bengaluru, Karnataka 562130','Restaurant'),
+  StorePlaces('Bell24',LatLng(12.9884405,77.4055239),'https://lh5.googleusercontent.com/p/AF1QipP9imwdBOSN509fw6CXjiXvPXTSPolXoHx59wcD=w426-h240-k-no','SH 85, Kadabagere Cross, Bengaluru, Karnataka 562130','Restaurant'),
+  StorePlaces('KING DINE',LatLng(12.9657443,77.4336713),'https://lh5.googleusercontent.com/p/AF1QipOq-ZXQRMeeBVq10Uju1BO1epByuw6PzSnoBiG6=w408-h306-k-no','# 3517/2, Sir. M. Vishweshwariah Layout, 6th Block, 100 Feet Road, Ullalu, Bengaluru, Karnataka 560056','Restaurant'),
+  StorePlaces('Masala Magic',LatLng(13.0109621,77.4577726),'https://lh5.googleusercontent.com/p/AF1QipMXsKsjjBs7WORCgVJK86I903DK19vgwNihjDW3=w426-h240-k-no','Andrahalli Main Rd, above metro wines, D Group Employees Layout, Bengaluru, Karnataka 560091','Restaurant'),
+  //zone - 11
+  StorePlaces('The Krafted Backyard',LatLng(12.9992651,77.4469146),'https://lh5.googleusercontent.com/p/AF1QipPDFzY9nQSX2XVxeQyQ8CWHAPULa1ozGPCFr4xQ=w408-h306-k-no','Sy no. 52/2, Kadabagere Rd, near KT Developers, Kadabagere, Bengaluru, Karnataka 562130','hotel'),
+  StorePlaces('Sri Sai Ram Suites',LatLng(13.0081076,77.4607871),'https://lh5.googleusercontent.com/p/AF1QipPXocvNk8Gz7mnWWRo0SqMwDeD9pDzgFDI6pkBS=w408-h271-k-no','Geology Layout, ITI Employees Layout, Mallathahalli, Bengaluru, Karnataka 560072','hotel'),
+  StorePlaces('P N K Suites',LatLng(13.0087553,77.4290334),'https://lh5.googleusercontent.com/p/AF1QipP8AxHp20QTffmMJJqiAOCgXOk9GO1mkLRRFSz4=w408-h272-k-no','Sri muneshwaraswamy temple, 25, Thigalarapalya Main Rd, Annapurneswari Layout, Ragavendra Industrial Estate, Bengaluru, Karnataka 560058','hotel'),
+  StorePlaces('Royal galaxy hotel',LatLng(12.9828981,77.4585574),'https://lh5.googleusercontent.com/p/AF1QipOT9iatWKavhRX1so8neeYxvpkbPFkyj-ouSkel=w408-h903-k-no','600P, 100 Feet Rd, Sir M Vishweshwaraiah Layout 6th Block, Upkar Layout, Ullal Uppanagar, Bengaluru, Ullal, Karnataka 560110','hotel'),
+  StorePlaces('Hotel Maharaja',LatLng(12.9828981,77.4585574),'https://lh5.googleusercontent.com/p/AF1QipNb2Lc1sA_A26ZQcQywVSMWoXCmvD5C_oFMLP7M=w527-h240-k-no','Health Layout, Sunkadakatte, Bengaluru, Karnataka 560091','hotel'),
+  //zone - 10
+  StorePlaces('Mysuru Mallige',LatLng(12.9247234,77.4921238),'https://lh5.googleusercontent.com/p/AF1QipPmgaQ1P7PR5Tpm-brVlT8Xs_Zz53FEN5HCVkd7=w408-h544-k-no','Water Tank Rd, 4th Block, Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085'.'park'),
+  StorePlaces('Poornapragna Park',LatLng(12.9247234,77.4921238),'https://lh5.googleusercontent.com/p/AF1QipPTcFjcbQkGQiVfXoWE19Hq8YO0VgpQNn0aRlfN=w408-h542-k-no','Poorna Pragna Nagar, Purnapragnya Layout, Poornapragna Housing Society L, Poornapragna Housing Society Layout, Bengaluru, Karnataka 560061','park'),
+  StorePlaces('Kengeri Satellite Town Park',LatLng(12.9240421,77.4852227),'https://lh5.googleusercontent.com/p/AF1QipMrX2Ko0BCQ0DsVrcbBtJGZ-wmH3K-6SrjsjabD=w426-h240-k-no','3rd Main Rd, Stage II, Kengeri Satellite Town, Bengaluru, Karnataka 560060','park'),
+  StorePlaces('Kommaghatta Lake, Public Park',LatLng(12.9190618,77.4671563),'https://lh5.googleusercontent.com/p/AF1QipNObkaIVW0rNLHkmWQ1N2SOWjubbqiEBDrPeqPs=w408-h306-k-no','Kommaghatta Lake Rd, Quality Layout, Kengeri Satellite Town, Sir M Vishweshwaraiah Layout 2nd Block, Karnataka 560060','park'),
+  StorePlaces('Nice Road Park',LatLng(12.8820281,77.4410909),'https://lh5.googleusercontent.com/p/AF1QipO0QQFyjURAQMc8ltpMwmfAajGTDiQcaQ57umGe=w408-h306-k-no','VFHW+F7F, Bengaluru, Karnataka 560062','park'),
+  //zone - 10
+  StorePlaces('Sri Rajarajeshwari Temple',LatLng(12.9127202,77.4623604),'https://lh5.googleusercontent.com/p/AF1QipPyKDz7iitP5EkO2T3bPjFwAh2Ot09US5LxWBsz=w408-h674-k-no','Rajarajeshwari Temple Rd, Kenchenhalli, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098','monument'),
+  StorePlaces('Shri Panchamukhi Ganesha Temple',LatLng(12.9022914,77.4596987),'https://lh5.googleusercontent.com/p/AF1QipPupmlJi9cRMKZVUQ1zYg1XLOCSlOBc5-GZyOb7=w408-h544-k-no','Sri Panchamukhi Ganesha Temple, Mysore Rd, Kengeri, Bengaluru, Karnataka 560060','monument'),
+  StorePlaces('Shri Venkateshwara Swami Temple',LatLng(12.9078457,77.4709914),'https://lh5.googleusercontent.com/p/AF1QipOnU5uzw8-9S9a_7OBY_bR9scHeik12w0ENaXk9=w408-h623-k-no','Kommaghatta Main Rd, Bande Mutt, Kengeri Satellite Town, Bengaluru, Karnataka 560060','monument'),
+  StorePlaces('Omkara Ashrama Mahaasamsthaana',LatLng(12.9031118,77.4766336),'https://lh5.googleusercontent.com/p/AF1QipP6LbQbm0WWFqdl8sx14KGhdD0k30DUSB6ljH2K=w408-h306-k-no','Omkar Hills, Shrinivasapura, Bengaluru, Karnataka 560060','monument'),
+  StorePlaces('Kriyakalpa Technocultural Museum',LatLng(12.9131903,77.4792091),'https://lh5.googleusercontent.com/p/AF1QipOHh4ibnq_JXm3Ab6uv4h-jnsfnhU_BLFlGQAYo=w408-h544-k-no','RV College of Engineering, Mysore Rd, RV Vidyaniketan, Bengaluru, Karnataka 560059','monument'),
+  //zone - 10
+  StorePlaces('Raj Vista',LatLng(12.9131893,77.4792091),'https://lh5.googleusercontent.com/p/AF1QipONqo8Wks5nbOQ2noyPbuMjJtraQXM9cNaS8-4H=w436-h240-k-no','2, behind Karnataka Bank, BEML Layout 7th Stage, Mailasandra, Bengaluru, Karnataka 560059','hotel'),
+  StorePlaces('Betania (The Garden House)',LatLng(12.9131893,77.4792091),'https://lh5.googleusercontent.com/p/AF1QipM-rPA-mAVuKCphnaKBC7qUQ5yW7RxKJg0xauCp=w532-h240-k-no','903, 1St B main, 6th D Cross Rd, Kengeri Satellite Town, Bengaluru, Karnataka 560060','hotel'),
+  StorePlaces('Townhouse',LatLng(12.9112635,77.4778676),'https://lh5.googleusercontent.com/p/AF1QipPSND3rCgZBMF8Esl75tjQosr6XKS5pCe_wmerU=w408-h272-k-no','1st Main Rd, Stage I, Kengeri Satellite Town, Bengaluru, Karnataka 560060','hotel'),
+  StorePlaces('Aihikah Farmstay',LatLng(12.9048647,77.4544231),'https://lh5.googleusercontent.com/p/AF1QipPSB1Xnoj9XOTWUcDxR-Rn49cOBUO068GeQ1-0O=w408-h306-k-no','Hosa byrohalli, Bengaluru, Kommaghatta, Karnataka 560060','hotel'),
+  StorePlaces('The Prince Royal',LatLng(12.9065254,77.4943937),'https://lh5.googleusercontent.com/p/AF1QipOz7N2ZJANu-iojE8KGXeRCEge97LuagKbNNlc9=w408-h271-k-no','34/4A, 9, Uttarahalli Main Rd, next to RNSIT College, Channasandra, Kengeri, Bengaluru, Karnataka 560098','hotel'),
+  //zone - 10
+  StorePlaces('1947 Restaurant',LatLng(12.9141252,77.4734573),'https://lh5.googleusercontent.com/p/AF1QipMKGaNmBvE18gFhouVhXJbxUyFq2MCqyIo5k-ib=w408-h240-k-no-pi0-ya260-ro0-fo100','Kathriguppe IV Phase, Gururaja Layout, Banashankari, Bengaluru, Karnataka 560070','Restaurant'),
+  StorePlaces('Ginger Lake View',LatLng(12.9150223,77.4784472),'https://lh5.googleusercontent.com/p/AF1QipP0f3ioApS6OIMl9F9f8QUgO4vCixj_8g2YQrlZ=w408-h532-k-no','39, Uttarahalli Main Road Green View Layout, Kengeri opp mahaveer lake apartment, Bengaluru, Karnataka 560060','Restaurant'),
+  StorePlaces('Ambrosia',LatLng(12.9189814,77.477649),'https://lh5.googleusercontent.com/p/AF1QipNkt9su48LkI3XH6djES5M9RWu8t9G_pgunrX-A=w408-h544-k-no','Noojibail Nursery Compound, 15/3A, Dr.Vishnuvardhan Rd, Srinivaspura, Ganakal Village, Bengaluru, Karnataka 560060','Restaurant'),
+  StorePlaces('Srinidhi Sagar Deluxe',LatLng(12.8831665,77.4361172),'https://lh5.googleusercontent.com/p/AF1QipNcPNOuLtGxYvIlN2GVy6I2agwIN8dVAvnhSmpg=w408-h727-k-no','No. 264,Muttappa Complex Anchepalya, Mysore Rd, Kengeri Hobli, Bengaluru, Karnataka 560074','Restaurant'),
+  StorePlaces('Kuteera Park Land Restaurant',LatLng(12.9372387,77.4797855),'https://lh5.googleusercontent.com/p/AF1QipNr1fI5GrFjBCRmmHwzDeexhMKyKN9GoAqfcNwj=w408-h240-k-no-pi-0-ya47.4-ro-0-fo100','61, Old Outer Ring Road, Mariyappana Palya, Kengeri Satellite Town, Bengaluru, Karnataka 560056','Restaurant'),
+  StorePlaces('New Udupi Kitchen(NUK)',LatLng(12.9372387,77.4797855),'https://lh5.googleusercontent.com/p/AF1QipN1_8pTpQLUUF3CeKFzc_6szr-zFFAGRM2nBBi5=w408-h306-k-no','119, Dodda Basti Main Rd, Raju Badavane, Bhuvaneshwari Nagar, Nagdevanahalli, Bengaluru, Karnataka 560056','Restaurant'),
+  
 ];
 
 List<StorePlaces> park_places = [
@@ -696,6 +744,18 @@ List<StorePlaces> park_places = [
       'https://lh5.googleusercontent.com/p/AF1QipO3kub2vuhikI2GFAm6f--gaWrc9Dm3d9UTpl-p=w408-h306-k-no',
       'Renaissance HVV Villas, Jalahalli, Bengaluru, Karnataka 560015',
       'park'),
+  //zone - 11
+  StorePlaces('Ullala BDA Park',LatLng(12.9860109,77.4499397),'https://lh5.googleusercontent.com/p/AF1QipPivQrwUobDpvQdb1rpO9OUeo99QmbBW9X4qhrS=w408-h306-k-no','5th Block, Upkar Residency Layout, Railway Layout, SMV Layout, Ullal, Karnataka 560110','park'),
+  StorePlaces('BBMP PARK', LatLng(13.0158435,77.4676337),'https://lh5.googleusercontent.com/p/AF1QipN47WvMahNGJJ65KpTH5tnLjVgkdCUSRCOUOeOE=w426-h240-k-no','3rd Block, HMT Layout, Post, Nagasandra, Bengaluru, Karnataka 560073','park'),
+  StorePlaces('Andrahalli Park',LatLng(13.0130469,77.474042),'https://lh5.googleusercontent.com/p/AF1QipOuVewAZ0WYBHmvBevci0qcj3a4X31cXCUoN0SX=w408-h305-k-no','2F5P+XJC, Ragavendra Nagar, Bengaluru, Karnataka 560091','park'),
+  StorePlaces('Jnanaganapthi temple Park',LatLng(12.9347896,77.4619678),'https://lh5.googleusercontent.com/p/AF1QipMzXzuLmf_b9AAW1Y-FLSgG7xiNsu7puFsv_KQc=w426-h240-k-no','14th, Jnanabharathi Bengaluru, 17th A Cross Rd, Gnanabharathi Layout 2nd Block, Jnana Ganga Nagar, Bengaluru, Karnataka 560056','park'),
+  StorePlaces('Kempegowda Park',LatLng(12.9877721,77.4265432),'https://lh5.googleusercontent.com/p/AF1QipMniTIYARy1MUwM2riPdcRTrdyykbxeQ6K8ID59=w408-h408-k-no','XFRF+F7R, Kempegowdanagar, Byadarahalli, Bengaluru, Karnataka 560091','park'),
+  //zone - 10
+  StorePlaces('Mysuru Mallige',LatLng(12.9247234,77.4921238),'https://lh5.googleusercontent.com/p/AF1QipPmgaQ1P7PR5Tpm-brVlT8Xs_Zz53FEN5HCVkd7=w408-h544-k-no','Water Tank Rd, 4th Block, Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085'.'park'),
+  StorePlaces('Poornapragna Park',LatLng(12.9247234,77.4921238),'https://lh5.googleusercontent.com/p/AF1QipPTcFjcbQkGQiVfXoWE19Hq8YO0VgpQNn0aRlfN=w408-h542-k-no','Poorna Pragna Nagar, Purnapragnya Layout, Poornapragna Housing Society L, Poornapragna Housing Society Layout, Bengaluru, Karnataka 560061','park'),
+  StorePlaces('Kengeri Satellite Town Park',LatLng(12.9240421,77.4852227),'https://lh5.googleusercontent.com/p/AF1QipMrX2Ko0BCQ0DsVrcbBtJGZ-wmH3K-6SrjsjabD=w426-h240-k-no','3rd Main Rd, Stage II, Kengeri Satellite Town, Bengaluru, Karnataka 560060','park'),
+  StorePlaces('Kommaghatta Lake, Public Park',LatLng(12.9190618,77.4671563),'https://lh5.googleusercontent.com/p/AF1QipNObkaIVW0rNLHkmWQ1N2SOWjubbqiEBDrPeqPs=w408-h306-k-no','Kommaghatta Lake Rd, Quality Layout, Kengeri Satellite Town, Sir M Vishweshwaraiah Layout 2nd Block, Karnataka 560060','park'),
+   StorePlaces('Nice Road Park',LatLng(12.8820281,77.4410909),'https://lh5.googleusercontent.com/p/AF1QipO0QQFyjURAQMc8ltpMwmfAajGTDiQcaQ57umGe=w408-h306-k-no','VFHW+F7F, Bengaluru, Karnataka 560062','park'),
 ];
 
 List<StorePlaces> monument_places = [
@@ -836,6 +896,18 @@ List<StorePlaces> monument_places = [
       'https://lh5.googleusercontent.com/p/AF1QipMvJQCVPiesZMQ2VxWiRaL1FJOYzro3r1wWYZ4m=w408-h544-k-no',
       'Bagalagunte Main Rd, Visveshwaraiah Layout, Manjunatha Nagar, Bagalakunte, Bengaluru, Karnataka 560073',
       'monument'),
+  //zone - 11
+  StorePlaces('Sallapuradamma Temple',LatLng(12.9861034,77.4492343),'https://lh5.googleusercontent.com/p/AF1QipMblBY8MQqgPycLWiK8EUocn8H1llFYnZ8cTaKd=w408-h544-k-no','961A, 17th Cross Rd D Group Employees Society, 17th Cross Rd, D Group Employees Society, D-Group Layout, Srigandada Kaval, Annapurneshwari Nagar, Bengaluru, Karnataka 560091','monument'),
+  StorePlaces('Veeranjaneya Devaru Temple',LatLng(12.9861034,77.4492343),'https://lh5.googleusercontent.com/p/AF1QipPq2G-4xjFon-EnPGgZrUa4cPLCOkzfmOlVX9Ue=w408-h306-k-no','Hegganahalli Main Rd, Sanjeevani Nagar, Sunkadakatte, Bengaluru, Karnataka 560091','monument'),
+  StorePlaces('ISKCON - Rajapur Jagannatha Dham',LatLng(12.9721584,77.4386852),'https://lh5.googleusercontent.com/p/AF1QipOc5FtVh0mXhC_jQnJ4ItiroFyqZFwO5rRRArhX=w522-h240-k-no','ISKCON Magadi Main Road 2nd Floor, #39 Priyadarshini Layout, next to BEL 2nd Stage, off Magadi Main Road, Bengaluru, Karnataka 560091','monument'),
+  StorePlaces('The Destino',LatLng(13.0112796,77.4358032),'https://lh5.googleusercontent.com/p/AF1QipM-8EUv5A8RxuYThQthCJPnCz4Sc8i6WiAVT0FW=w408-h272-k-no','62, K G Lakkenhalli, Lakshmipura post, Dasanpura, hobli, Bengaluru, Karnataka 562162','monument'),
+  //zone - 10
+  StorePlaces('Sri Rajarajeshwari Temple',LatLng(12.9127202,77.4623604),'https://lh5.googleusercontent.com/p/AF1QipPyKDz7iitP5EkO2T3bPjFwAh2Ot09US5LxWBsz=w408-h674-k-no','Rajarajeshwari Temple Rd, Kenchenhalli, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098','monument'),
+  StorePlaces('Shri Panchamukhi Ganesha Temple',LatLng(12.9022914,77.4596987),'https://lh5.googleusercontent.com/p/AF1QipPupmlJi9cRMKZVUQ1zYg1XLOCSlOBc5-GZyOb7=w408-h544-k-no','Sri Panchamukhi Ganesha Temple, Mysore Rd, Kengeri, Bengaluru, Karnataka 560060','monument'),
+  StorePlaces('Shri Venkateshwara Swami Temple',LatLng(12.9078457,77.4709914),'https://lh5.googleusercontent.com/p/AF1QipOnU5uzw8-9S9a_7OBY_bR9scHeik12w0ENaXk9=w408-h623-k-no','Kommaghatta Main Rd, Bande Mutt, Kengeri Satellite Town, Bengaluru, Karnataka 560060','monument'),
+  StorePlaces('Omkara Ashrama Mahaasamsthaana',LatLng(12.9031118,77.4766336),'https://lh5.googleusercontent.com/p/AF1QipP6LbQbm0WWFqdl8sx14KGhdD0k30DUSB6ljH2K=w408-h306-k-no','Omkar Hills, Shrinivasapura, Bengaluru, Karnataka 560060','monument'),
+  StorePlaces('Kriyakalpa Technocultural Museum',LatLng(12.9131903,77.4792091),'https://lh5.googleusercontent.com/p/AF1QipOHh4ibnq_JXm3Ab6uv4h-jnsfnhU_BLFlGQAYo=w408-h544-k-no','RV College of Engineering, Mysore Rd, RV Vidyaniketan, Bengaluru, Karnataka 560059','monument'),
+  
 ];
 
 List<StorePlaces> restaurant_places = [
@@ -1011,6 +1083,19 @@ List<StorePlaces> restaurant_places = [
       'https://lh5.googleusercontent.com/p/AF1QipO1TXfBc5CdmgyRq4In_vvOg1iFqj_sDB5ED4Nh=w408-h408-k-no',
       'Nh-04, Tumkur Rd, Maheswari Nagar, Kempegowdanagar, Bengaluru, Karnataka 560057',
       'Restaurant'),
+  //zone - 11
+  StorePlaces('The Village Restaurant',LatLng(13.0045051,77.4270485),'https://lh5.googleusercontent.com/p/AF1QipNZHVvNhO8fk5AlPAw7EGDYj0NjAKxsLRbWqgFZ=w408-h271-k-no','Janapriya Rd, Kadabagere Cross, Bengaluru, Karnataka 562130','Restaurant'),
+  StorePlaces('Bell24',LatLng(12.9884405,77.4055239),'https://lh5.googleusercontent.com/p/AF1QipP9imwdBOSN509fw6CXjiXvPXTSPolXoHx59wcD=w426-h240-k-no','SH 85, Kadabagere Cross, Bengaluru, Karnataka 562130','Restaurant'),
+  StorePlaces('KING DINE',LatLng(12.9657443,77.4336713),'https://lh5.googleusercontent.com/p/AF1QipOq-ZXQRMeeBVq10Uju1BO1epByuw6PzSnoBiG6=w408-h306-k-no','# 3517/2, Sir. M. Vishweshwariah Layout, 6th Block, 100 Feet Road, Ullalu, Bengaluru, Karnataka 560056','Restaurant'),
+  StorePlaces('Masala Magic',LatLng(13.0109621,77.4577726),'https://lh5.googleusercontent.com/p/AF1QipMXsKsjjBs7WORCgVJK86I903DK19vgwNihjDW3=w426-h240-k-no','Andrahalli Main Rd, above metro wines, D Group Employees Layout, Bengaluru, Karnataka 560091','Restaurant'),
+    //zone - 10
+  StorePlaces('1947 Restaurant',LatLng(12.9141252,77.4734573),'https://lh5.googleusercontent.com/p/AF1QipMKGaNmBvE18gFhouVhXJbxUyFq2MCqyIo5k-ib=w408-h240-k-no-pi0-ya260-ro0-fo100','Kathriguppe IV Phase, Gururaja Layout, Banashankari, Bengaluru, Karnataka 560070','Restaurant'),
+  StorePlaces('Ginger Lake View',LatLng(12.9150223,77.4784472),'https://lh5.googleusercontent.com/p/AF1QipP0f3ioApS6OIMl9F9f8QUgO4vCixj_8g2YQrlZ=w408-h532-k-no','39, Uttarahalli Main Road Green View Layout, Kengeri opp mahaveer lake apartment, Bengaluru, Karnataka 560060','Restaurant'),
+  StorePlaces('Ambrosia',LatLng(12.9189814,77.477649),'https://lh5.googleusercontent.com/p/AF1QipNkt9su48LkI3XH6djES5M9RWu8t9G_pgunrX-A=w408-h544-k-no','Noojibail Nursery Compound, 15/3A, Dr.Vishnuvardhan Rd, Srinivaspura, Ganakal Village, Bengaluru, Karnataka 560060','Restaurant'),
+  StorePlaces('Srinidhi Sagar Deluxe',LatLng(12.8831665,77.4361172),'https://lh5.googleusercontent.com/p/AF1QipNcPNOuLtGxYvIlN2GVy6I2agwIN8dVAvnhSmpg=w408-h727-k-no','No. 264,Muttappa Complex Anchepalya, Mysore Rd, Kengeri Hobli, Bengaluru, Karnataka 560074','Restaurant'),
+  StorePlaces('Kuteera Park Land Restaurant',LatLng(12.9372387,77.4797855),'https://lh5.googleusercontent.com/p/AF1QipNr1fI5GrFjBCRmmHwzDeexhMKyKN9GoAqfcNwj=w408-h240-k-no-pi-0-ya47.4-ro-0-fo100','61, Old Outer Ring Road, Mariyappana Palya, Kengeri Satellite Town, Bengaluru, Karnataka 560056','Restaurant'),
+  StorePlaces('New Udupi Kitchen(NUK)',LatLng(12.9372387,77.4797855),'https://lh5.googleusercontent.com/p/AF1QipN1_8pTpQLUUF3CeKFzc_6szr-zFFAGRM2nBBi5=w408-h306-k-no','119, Dodda Basti Main Rd, Raju Badavane, Bhuvaneshwari Nagar, Nagdevanahalli, Bengaluru, Karnataka 560056','Restaurant'),
+
 ];
 
 List<StorePlaces> hotel_places = [
@@ -1121,4 +1206,16 @@ List<StorePlaces> hotel_places = [
       'https://lh5.googleusercontent.com/p/AF1QipMauXGqfoLe-OZ5xJZ0HpxTt73x-B2DhkgMI4Zv=w408-h290-k-no',
       '2275, Tumkur Rd, Yeshwanthpur Industrial Area, Phase 1, Yeswanthpur, Bengaluru, Karnataka 560022',
       'hotel'),
+  //zone - 11
+  StorePlaces('The Krafted Backyard',LatLng(12.9992651,77.4469146),'https://lh5.googleusercontent.com/p/AF1QipPDFzY9nQSX2XVxeQyQ8CWHAPULa1ozGPCFr4xQ=w408-h306-k-no','Sy no. 52/2, Kadabagere Rd, near KT Developers, Kadabagere, Bengaluru, Karnataka 562130','hotel'),
+  StorePlaces('Sri Sai Ram Suites',LatLng(13.0081076,77.4607871),'https://lh5.googleusercontent.com/p/AF1QipPXocvNk8Gz7mnWWRo0SqMwDeD9pDzgFDI6pkBS=w408-h271-k-no','Geology Layout, ITI Employees Layout, Mallathahalli, Bengaluru, Karnataka 560072','hotel'),
+  StorePlaces('P N K Suites',LatLng(13.0087553,77.4290334),'https://lh5.googleusercontent.com/p/AF1QipP8AxHp20QTffmMJJqiAOCgXOk9GO1mkLRRFSz4=w408-h272-k-no','Sri muneshwaraswamy temple, 25, Thigalarapalya Main Rd, Annapurneswari Layout, Ragavendra Industrial Estate, Bengaluru, Karnataka 560058','hotel'),
+  StorePlaces('Royal galaxy hotel',LatLng(12.9828981,77.4585574),'https://lh5.googleusercontent.com/p/AF1QipOT9iatWKavhRX1so8neeYxvpkbPFkyj-ouSkel=w408-h903-k-no','600P, 100 Feet Rd, Sir M Vishweshwaraiah Layout 6th Block, Upkar Layout, Ullal Uppanagar, Bengaluru, Ullal, Karnataka 560110','hotel'),
+  StorePlaces('Hotel Maharaja',LatLng(12.9828981,77.4585574),'https://lh5.googleusercontent.com/p/AF1QipNb2Lc1sA_A26ZQcQywVSMWoXCmvD5C_oFMLP7M=w527-h240-k-no','Health Layout, Sunkadakatte, Bengaluru, Karnataka 560091','hotel'),
+  //zone - 10
+  StorePlaces('Raj Vista',LatLng(12.9131893,77.4792091),'https://lh5.googleusercontent.com/p/AF1QipONqo8Wks5nbOQ2noyPbuMjJtraQXM9cNaS8-4H=w436-h240-k-no','2, behind Karnataka Bank, BEML Layout 7th Stage, Mailasandra, Bengaluru, Karnataka 560059','hotel'),
+  StorePlaces('Betania (The Garden House)',LatLng(12.9131893,77.4792091),'https://lh5.googleusercontent.com/p/AF1QipM-rPA-mAVuKCphnaKBC7qUQ5yW7RxKJg0xauCp=w532-h240-k-no','903, 1St B main, 6th D Cross Rd, Kengeri Satellite Town, Bengaluru, Karnataka 560060','hotel'),
+  StorePlaces('Townhouse',LatLng(12.9112635,77.4778676),'https://lh5.googleusercontent.com/p/AF1QipPSND3rCgZBMF8Esl75tjQosr6XKS5pCe_wmerU=w408-h272-k-no','1st Main Rd, Stage I, Kengeri Satellite Town, Bengaluru, Karnataka 560060','hotel'),
+  StorePlaces('Aihikah Farmstay',LatLng(12.9048647,77.4544231),'https://lh5.googleusercontent.com/p/AF1QipPSB1Xnoj9XOTWUcDxR-Rn49cOBUO068GeQ1-0O=w408-h306-k-no','Hosa byrohalli, Bengaluru, Kommaghatta, Karnataka 560060','hotel'),
+  StorePlaces('The Prince Royal',LatLng(12.9065254,77.4943937),'https://lh5.googleusercontent.com/p/AF1QipOz7N2ZJANu-iojE8KGXeRCEge97LuagKbNNlc9=w408-h271-k-no','34/4A, 9, Uttarahalli Main Rd, next to RNSIT College, Channasandra, Kengeri, Bengaluru, Karnataka 560098','hotel'),
 ];
