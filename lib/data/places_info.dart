@@ -23,6 +23,19 @@ List<StorePlaces> places = [
       'Whitefield Main Road, Mahadevapura, Bengaluru, Karnataka 560048',
       'city_mall'),
   StorePlaces(
+      'Nexus Mall Koromangla',
+      LatLng(12.937618567380122, 77.6233270093909 ),
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/The-Forum-Mall-BLR-1.jpg/1024px-The-Forum-Mall-BLR-1.jpg',
+      'Hosur Rd, Chikku Lakshmaiah Layout, Koramangala, Bengaluru, Karnataka 560095',
+      'city_mall'),
+
+  StorePlaces(
+      'Gopalan Innovation Mall',
+      LatLng(12.918294247481347, 77.60847830034427 ),
+      'https://www.gopalanmall.com/img/gopalan-innovation-mall.jpg',
+      '22, Bannerghatta Rd, Sarakki Industrial Layout, 3rd Phase, J. P. Nagar, Bengaluru, Karnataka 560076',
+      'city_mall'),
+  StorePlaces(
       'Visvesvaraya Industrial & Technological Museum',
       LatLng(12.975046, 77.593954),
       'https://static.toiimg.com/thumb/msid-24981013,width=1200,height=900/24981013.jpg',
@@ -158,6 +171,30 @@ List<StorePlaces> park_places = [
       'https://imgmedia.lbb.in/media/2018/11/5bffeb035f05991540870171_1543498499157.jpg',
       'Bannerghatta Rd, Bannerghatta, Bengaluru, Karnataka 560083',
       'park'),
+  StorePlaces(
+      'Shankaraa Foundation',
+      LatLng(12.88665784214793, 77.55682708633184 ),
+      'https://images.venuebookingz.com/20789-1678788190-wm-shankara-foundation-bangalore-7.jpg',
+      'Shankaraa, Kanakapura Rd, Doddakallasandra, Bengaluru, Karnataka 560062',
+      'park'),
+StorePlaces(
+      'Puttenahalli Lake',
+      LatLng(12.893865405618012, 77.59057223844852),
+      'https://images.citizenmatters.in/wp-content/uploads/sites/14/2017/08/29171318/Puttenahalli-lake.jpg?strip=all&lossy=1&ssl=1',
+      'Arekere MICO Layout Main Rd, Puttenahalli, JP Nagar 7th Phase, near MLR Convention Hall, Bengaluru, Karnataka 560076',
+      'park'),
+StorePlaces(
+      'BTM',
+      LatLng(12.907998095283714, 77.61952750200341),
+      'https://content.jdmagicbox.com/comp/bangalore/n2/080pxx80.xx80.190719230454.s3n2/catalogue/national-poet-kuvempu-park-btm-layout-bangalore-parks-em3asvs111.jpg?clr=',
+      '181, Tank Shore Rd, EWS Colony, Lake City, BTM Layout, Bengaluru, Karnataka 560076',
+      'park'),
+StorePlaces(
+      'Ramaiah City Park',
+      LatLng(12.885814286659894, 77.58805928259387),
+      'https://lh5.googleusercontent.com/p/AF1QipP1tBIfV_Xn8kOMgqytgGIQNuwRLth_wKsWF4dG=w1080-k-no',
+      'VHJP+8WF, MS Ramaiah City Layout, JP Nagar 7th Phase, Arekere, Bengaluru, Kothnur, Karnataka 560078',
+      'park'),      
 ];
 
 List<StorePlaces> monument_places = [
@@ -185,6 +222,30 @@ List<StorePlaces> monument_places = [
       'https://upload.wikimedia.org/wikipedia/commons/e/e4/Vidhana_Soudha%2C_front_%2801%29.jpg',
       'Doctor Ambedkar Veedhi, Sampangi Rama Nagar, Bengaluru, Karnataka 560001',
       'monument'),
+  StorePlaces(
+      'Cave Temple',
+      LatLng(12.87774694897638, 77.59948493666768),
+      'https://www.karnataka.com/wp-content/uploads/2007/10/800px-Southern_Fort__the_old_gun_Badami_1.jpg',
+      'VHGX+RPW, Cave Temple Rd, Pai Layout, Hulimavu, Bengaluru, Karnataka 560076',
+      'monument'),
+  StorePlaces(
+        'Begur Fort',
+        LatLng(12.875960139607844, 77.62301623917813),
+        'https://imgmedia.lbb.in/media/2018/08/5b7c3947d994ba0a5c821d34_1534867783490.jpg',
+        'Akshaya Residency, Akshayanagar, Bengaluru, Karnataka 560076',
+        'monument'),
+  StorePlaces(
+        'Shri Panchalinga Nageshwara Temple',
+        LatLng(12.878846300507146, 77.62851714284861),
+        'https://www.bangaloretourism.org/image/begur-nageshwara-temple108.jpg',
+        'BBMP Office, Begur Rd, opposite to Begur, Begur, Bengaluru, Karnataka 560068',
+        'monument'),
+  StorePlaces(
+        'ISKCON South Bengaluru',
+        LatLng(12.906268653312331, 77.55561232604909 ),
+        'https://www.iskconbangalore.org/wp-content/uploads/2015/11/vaikutha-hill.jpg',
+        '3rd Main Rd, Samvruddi Enclave, 2nd Stage, Kumaraswamy Layout, Bengaluru, Karnataka 560061',
+        'monument'),
 ];
 
 List<StorePlaces> restaurant_places = [
@@ -212,7 +273,34 @@ List<StorePlaces> restaurant_places = [
     'https://images.slurrp.com/prod/rich_article/8w825qb6qyi.webp?impolicy=slurrp-20210601&width=880&height=500',
     'No. 44/1, Residency Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025',
     'Restaurant', // Change category to Restaurant
-  )
+  ),
+  StorePlaces(
+      'Dilli Chowk',
+      LatLng(12.863163156944053, 77.58057564515066),
+      'https://content.jdmagicbox.com/comp/bangalore/y1/080pxx80.xx80.211101213712.l4y1/catalogue/dilli-chowk-gottigere-bangalore-restaurants-llb2cp8t3b.jpg',
+      '30, Kembathalli Main Rd, TK Deepak Layout, 8th Phase, Gottigere, Bengaluru, Kothnur, Karnataka 560083',
+      'restaurant'),
+
+StorePlaces(
+      'Empire Restaurant',
+      LatLng(12.884194843569441, 77.5488451038873),
+      'https://im1.dineout.co.in/images/uploads/restaurant/sharpen/1/i/o/p115603-167506751063d7807678f13.jpg?w=400',
+      'No.2, Bank Officers and Officials House Building Society, Doddakallasandra, Bengaluru, Karnataka 560062',
+      'restaurant'),
+
+StorePlaces(
+      'Sstella Asian Kitchen And Bar',
+      LatLng(12.877204947510917, 77.59602593457753),
+      'https://d4t7t8y8xqo0t.cloudfront.net/resized/720X480/restaurant%2F689943%2Frestaurant520230807045919.jpg',
+      '3rd floor, Royal Meenakshi Mall Cave Temple Road, Bannerghatta Rd, Hulimavu, Bengaluru, Karnataka 560076',
+      'restaurant'),
+
+StorePlaces(
+      'Krishna Kuteera',
+      LatLng(12.870228511042315, 77.5972026588366),
+      'https://lh3.googleusercontent.com/VD06KBK4BCQYve7cIrcRaF0XVLHbWOGzTqLP3K6iNNcTJxYxdyQjDml8gKLa4Jg6zfS7m_mSZ84_dQkJlWih_82tJXPJ-iMG4NbLk4I=w1200-rw',
+      '52 2nd main, Bannerghatta Rd, Kalena Agrahara, Bengaluru, Karnataka 560076',
+      'restaurant'),
 ];
 
 List<StorePlaces> hotel_places = [
@@ -240,4 +328,28 @@ List<StorePlaces> hotel_places = [
       'https://cf.bstatic.com/xdata/images/hotel/max1024x768/154916176.jpg?k=bdae8442757dcf5f15433ec94a87969df84a54d4180c3782f45e40165e8ccef8&o=&hp=1',
       'Race Course Rd',
       'hotel'),
+  StorePlaces(
+      'Area 83',
+      LatLng(12.841359193240752, 77.57134616461667),
+      'https://media-cdn.tripadvisor.com/media/photo-s/0f/f0/ca/c4/getlstd-property-photo.jpg',
+      '313, Bannerghatta Road Shanbhoganahalli, Bilwaradahalli, Karnataka 560083',
+      'hotel'),
+  StorePlaces(
+        'Keys Select Hosur Road - By Lemon Tree Hotels',
+        LatLng(12.889495702131287, 77.64539418298166),
+        'https://media-cdn.tripadvisor.com/media/photo-s/10/e5/f1/08/grounds--v17463055.jpg',
+        'Hosur Rd, Singasandra, Bengaluru, Karnataka 560068',
+        'hotel'),
+  StorePlaces(
+        'Bannerghatta Nature Camp-Jungle Lodges',
+        LatLng(12.804474680101874, 77.56231007580465),
+        'https://img.lifeisoutside.com/getaways/135/featured/microsite.jpg',
+        'Bannerghatta Biological Park Kaggalipura Road near Hakki-Pikki Colony, Bannerughatta, Bengaluru, Karnataka 560083',
+        'hotel'),
+  StorePlaces(
+        'Hotel UD Residency',
+        LatLng(12.943706646575032, 77.57707295424375),
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/9a/95/c1/ud-residency.jpg?w=700&h=-1&s=1',
+        '#19/2, South, E End Main Rd, Basavanagudi, Bengaluru, Karnataka 560004',
+        'hotel'),
 ];
