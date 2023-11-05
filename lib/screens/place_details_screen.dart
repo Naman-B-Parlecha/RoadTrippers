@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:test/models/store_places.dart';
 import 'package:test/providers/favorite_provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PlaceDetailScreen extends StatefulWidget {
   const PlaceDetailScreen({
@@ -173,19 +174,27 @@ class _PlaceDetailScreenState extends State<PlaceDetailScreen> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(15))),
                           child: Center(
-                            child: provider.isPresent(widget.place)? Icon(
-                              Icons.favorite,
-                              color: Theme.of(context).colorScheme.background,
-                            ):Icon(
-                              Icons.favorite_border,
-                              color: Theme.of(context).colorScheme.background,
-                            ),
+                            child: provider.isPresent(widget.place)
+                                ? Icon(
+                                    Icons.favorite,
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .background,
+                                  )
+                                : Icon(
+                                    Icons.favorite_border,
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .background,
+                                  ),
                           ),
                         ),
                       ),
                       InkWell(
-                        onTap: () {
+                        onTap: () async {
                           // need to add code which will open up map and show routing //
+                          await launchUrl(Uri.parse(
+                              'google.navigation:q=${widget.place.latlng.latitude},${widget.place.latlng.longitude}'));
                         },
                         child: Container(
                           height: 70,
